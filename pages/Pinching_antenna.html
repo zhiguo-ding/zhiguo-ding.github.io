@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+
+
+<body>
+
+  <div class="navbar">
+      <a class="title">Zhiguo Ding</a>
+      <a class="inactive" href="../index.html">Home</a>
+      <a class="inactive" href="aboutme.html">About me</a>
+      <a class="inactive" href="research.html">Research</a>
+      <a class="active" href="publications.html">Publications</a>
+
+      <a class="link" href="https://ieeexplore.ieee.org/author/37278653500" style="padding-right: 10px;">
+          <img src="../images/ieee.png" width=40px height=40px> 
+      </a>
+
+      <a class="link" href="https://scholar.google.co.uk/citations?user=V-nB8scAAAAJ&hl=en"> 
+          <img src="../images/scholar.png" width=40px height=40px>
+      </a>
+
+  </div>
+
+
+  <div class="details">
+      
+    <h1>Q&A about Pinching Antennas</h1>
+
+<p> One of the most enjoyable parts for those conference/workshop presentations is the Q&A. Here is a list of interesting discussions with our colleagues (a very informal summary).</p>
+
+   <br>  <b>Q1</b>: What are the key advantages of pinching antennas?
+   
+  <br>  <b>A1</b>: Mainly three: i) create LoS links; ii) flexibility (easy to add or remove antennas); iii) practicality (low-cost deployment).   <br>
+
+   <br>  <b>Q2</b>: Why are pinching antennas important to future communications?
+   
+  <br>  <b>A2</b>: The concept of pinching antennas paves the way for realizing the ultimate goal of wireless communications: Providing fiber-like, user-centric, low-cost connections  <br>
+  
+ <img src="future.png"  height=200px>
+    
+   <br>  <b>Q3</b>: How is a pinching-antenna system different from cloud RAN, distributed MIMO, cell-free MIMO?
+   
+  <br>  <b>A3</b>: All these are essentially based on the same motivation: moving base stations (access points) close to users. Pinching-antenna systems offer the advantages of low cost (pinches are cheaper than RRHs) and flexibility (adding/releasing pinches is simpler than installing RRHs). Furthermore, no backhaul limits nor synchronization issues in pinching-antenna systems. Finally, we note that they are complementary to each other and can be implemented simultaneously in the same network. 
+  
+   <br>  <b>Q4</b>: How is a pinching-antenna system different from fluid and movable antennas?
+   
+  <br>  <b>A4</b>:  All these are essentially based on the same motivation: treating wireless channels as reconfigurable parameters by changing the locations of antennas. Both fluid and movable antennas are not capable of creating LoS links, which is the key feature of pinching antennas. In addition, adding an additional antenna in those existing antenna systems is not straightforward. Furthermore, pinching antennas can be implemented in a much low-cost manner, given the fact that both dielectric waveguides and pinches are not expensive. We also note that in pinching-antenna systems, antennas are likely to be placed very far from each other (hundreds or thousands of wavelengths), which means that the well-understood spherical channel models can be adopted in pinching-antenna networks (not much concern regarding antenna/channel coupling). Finally, these antenna techniques are complementary to each other and can be used simultaneously in the same network. 
+  
+   <br>  <b>Q5</b>: Why not to use the simple plane-wave model? Why to use the spherical-wave model?  
+   
+  <br>  <b>A5</b>:  In a pinching-antenna system, antenna spacing is decided by user spacing, which means that the aperture of a pinching antenna array can be very large. Hence, the spherical-wave model should be used. Of course, if we are sure that the array aperture is small, the plane-wave model, which is an approximation of the spherical-wave model, can be used. One example is the channel estimation work from Robert's group [30].  
+  
+  
+   <br>  <b>Q6</b>: What is the relationship between pinching antennas and near field communications?
+   
+  <br>  <b>A6</b>:  Using pinching antennas is an effective way to realize near-field communications. There are two conventional ways to realize NF. One is to use an extremely large MIMO array. As analyzed in the following work (Z. Ding, Resolution of Near-Field Beamforming and Its Impact on NOMA, IEEE WCL 2024), this approach can suffer poor resolution. The other is to use distributed MIMO (or C-RAN), which suffers synchronization issues. In pinching-antenna systems, spherical-wave modes are naturally to be used, and hence NF beamfocusing can be realized in a straightforward manner. 
+  
+   <br>  <b>Q7</b>: Will it be feasible to move antennas in real time?
+   
+  <br>  <b>A7</b>:  Pinching antennas can be moved, as movable antennas. But a more realistic implementation is to use the activation way shown in [5]. Because pinches are cheap, we can first preconfigure a large number of pinches along a waveguide and then activate one or some of these pinches as needed. Such activation can be done in a remote manner, similar to how the keyboard of a self-playing piano is controlled. 
+   
+    <br>  <b>Q8</b>: Why are pinching antennas important to ISAC?
+   
+  <br>  <b>A8</b>:  Pinching antennas are important to sensing tasks, particularly to localization. Consider a simple example using 3 anchors to realize trilateration, where a user is located by using the intersection of the 3 concentric circles with the 3 anchors as their centers. If the 3 anchors are very close (i.e., in a small-size array), an intuition is that the localization resolution can be poor. An alternative to avoid this resolution issue is to use distributed MIMO (CoMP), but it can suffer some implementation issues, e.g., synchronization and system overhead. Pinching antennas are naturally deployed in a large area, which is useful to improve sensing accuracy. 
+  
+    <br>  <b>Q9</b>: Can pinching antennas be applied to outdoor scenarios? How are pinching antennas related to radio stripes?
+   
+  <br>  <b>A9</b>:  For outdoor applications, waveguides can be deployed at the side of a building, road-side infrastructures, etc.  In such cases, the applications of pinching antennas become quite similar to radio stripes, which are also novel solutions for realizing large-scale antenna arrays. However, pinching antennas are featured by their flexibility and low-cost nature.   
+  
+      <br>  <b>Q10</b> How are pinching antennas related to visible light communications (VLC)?
+   
+  <br>  <b>A10</b>:  Both techniques can ensure that transmitters are close to users. VLC uses light signals, whereas pinching antennas are implemented by using RF signals, which makes the latter more compatible with the existing communication systems. 
+  
+        <br>  <b>Q11</b> How are pinching antennas related to surface wave communication?
+   
+  <br>  <b>A11</b>:  Surface wave communication is essentially a wired communication method, whereas pinching antennas are used to serve users wirelessly, as explained in the following.   Surface wave communication focuses on how signals can be passed through structured interfaces, i.e., it is in a non-radiative mode. Pinching antennas are to focus on how to radiate/leak/emit the signals in the waveguide to users via free space, where how the signals travel from the feed point to the radiated point is not the focus. In addition, the guided mode, instead of the surface wave mode, is used in the dielectric waveguide. 
+  
+          <br>  <b>Q12</b> Can the concept of pinching antennas be generalized?
+   
+  <br>  <b>A12</b>:  The rationale behind this question is that, according to Docomo's demonstration, an ideal application of pinching antennas is the indoor application using high frequency bands. Actually, Docomo's waveguide-based pinching antennas can be generalized as shown in [106]. In particular, there are two key stages for pinching-antenna-based transmission (here we use downlink as an example). The first stage is to pass signals through a wired medium, which is more robust and secure compared to the wireless medium. Docomo used dielectric waveguides for the first stage, and other mediums, e.g., leaky coaxial cables (LCX), to which there exists a rich literature. The second stage is to emit the signals in the wired medium to the wireless environment in a flexible manner. In the literature, different ways to use passive and active antennas to realize such RF signal emission have been developed.  
+  
+            <br>  <b>Q13</b> What is the impact of in-waveguide propagation loss on pinching-antenna systems?
+   
+  <br>  <b>A13</b>:  The recent works in [68] and [81] have thoroughly investigated this issue, and showed that the impact of in-waveguide propagation loss on pinching-antenna systems is insignificant. 
+  
+  
+              <br>  <b>Q14</b>  How to design uplink transmission for pinching-antenna systems?
+   
+  <br>  <b>A14</b>:  The rationale behind this question is explained in the following. Consider an uplink scenario with two pinching antennas activated on a single waveguide.  There is a potential re-leakage issue, where one activated pinching antenna might emit the signals picked up by the other pinching antenna. We note that there are some advanced hardware solutions to let one antenna's signal pass another antenna without being re-emitted, [96] provides a very simple, effective engineering solution, by using a segmented waveguide. In particular, there are mutltiple seperated segments, each of which has its own feed. In this way, a signal picked up by one segment will not be affected by other segments. There are quite a few other benefits for this segment waveguide design, e.g., low maintance cost, increased degrees of freedom, reduced in-waveguide loss, etc. 
+  
+  
+  <br>  <b>Q15</b>  How to deploy pinching antenna systems on a large scale?
+   
+  <br>  <b>A15</b>:  The rationale behind this question is that the feed point of a waveguide needs to be connected with the base station via cables and hence it is costly to deploy large-scale pinching antenna systems. [108] proposed a very interesting idea by using wireless backhaul, instead of cable connections, to connect the waveguides. This paves the way to the recent studies about multi-cell pinching antenna systems.
+  
+   <br>  <b>Q16</b>  How to use pinching-antenna systems to design new multiple access (next generation multiple access)?
+   
+  <br>  <b>A16</b>:  Essentially, this question is about whether the use of pinching-antenna systems leads to a new domain. We have the time domain (TDMA), frequency domain (OFDMA), code domain (CDMA), spatial domain (SDMA), and power domain (NOMA). Because the use of pinching antennas can reconfigure the propagation environment, the propagation environment itself can be treated as a new domain for realizing multiple access, which leads to the so-called Environment Division Multiple Access (EDMA). EDMA is also timely, given that so many sophisticated techniques have been developed to acquire knowledge of the propagation environment. 
+  
+    </p>
+    
+    
+    <h1>Bibliography on Pinching Antennas</h1>
+    
+    
+
+    <p>       [118]  Z. Ding, R. Schober, H. V. Poor,
+Environment Division Multiple Access (EDMA): A Feasibility Study via Pinching Antennas,
+arXiv:2511.03820
+ 
+ 
+     <br>    [117]   K. Cao, J. Chen, P. D. Diamantoulakis, L. Zhou, X. Li, Y. Liu, G. K. Karagiannidis,
+Performance Analysis of Wireless-Powered Pinching Antenna Systems,
+arXiv:2511.03401
+ 
+     <br>    [116]   D. Tyrovolas, S. A. Tegos, Y. Xiao, P. D. Diamantoulakis, S. Ioannidis, C. Liaskos, G. K. Karagiannidis, S. D. Asimonis,
+Ergodic Rate Analysis of Two-State Pinching-Antenna Systems,
+arXiv:2511.01798
+ 
+     <br>    [115]   Z. Cheng, C. Ouyang, N. Marchetti,
+On the Performance of Tri-Hybrid Beamforming Using Pinching Antennas
+arXiv:2511.01099
+ 
+     <br>    [114]   Z. Zhou, Z. Wang, Y. Liu,
+Dual-Scale Antenna Deployment for Pinching Antenna Systems,
+arXiv:2510.27185
+ 
+     <br>    [113]   Z. Zhou, Z. Wang, Y. Liu,
+Spectral and Energy Efficiency Tradeoff for Pinching-Antenna Systems,
+arXiv:2510.25192
+ 
+     <br>    [112]   A. Amhaz, S. Khisa, M. Elhattab, C. Assi, S. Sharafeddine,
+Coordinated Multipoint Transmission in Pinching Antenna Systems,
+arXiv:2510.23837
+ 
+     <br>    [111]   S. Khisa, A. Amhaz, M. Elhattab, C. Assi, S. Sharafeddine
+Joint Uplink and Downlink Resource Allocation and Antenna Activation for Pinching Antenna Systems,
+arXiv:2510.23467
+
+    <br>    [110]   Y. Lin, Z. Chen, Z. Ding,
+Pinching-antenna-enabled Federated Learning: Tail Latency, Participation, and Convergence Analysis,
+arXiv:2510.23315
+
+    <br>    [109]   Z. Hu, R. Zhong, X. Mu, D. Li, Y. Liu,
+PASS-Enhanced MEC: Joint Optimization of Task Offloading and Uplink PASS Beamforming,
+arXiv:2510.22948
+ 
+
+    <br>    [108]   K. R. Wijewardhana, A. Yadav, M. Zeng, M. Elsayed, O. A. Dobre, Z. Ding,
+Wireless-Fed Pinching-Antenna Systems (Wi-PASS) for NextG Wireless Networks,
+arXiv:2510.18743
+
+    <br>    [107]   Y. Ai, X. Mu, P. Si, Y. Liu, 
+Delay Minimization in Pinching-Antenna-enabled NOMA-MEC Networks,
+arXiv:2510.16296
+ 
+    <br>    [106]   Y. Xu, J. Cui, Y. Zhu, Z. Ding, T. H. Chang, R. Schober, V. W. S. Wong, O. A. Dobre, G. K. Karagiannidis, H. V. Poor, X. You,
+Generalized Pinching-Antenna Systems: A Tutorial on Principles, Design Strategies, and Future Directions,
+arXiv:2510.14166
+ 
+    <br>    [105]   Y. Lu, X. Xie, Y. Xu, B. Ai, O. A. Dobre, D. Niyato,
+Dual-Waveguide Pinching Antennas for PLS: Parallel Placement or Orthogonal Placement?,
+arXiv:2510.11044
+ 
+    <br>    [104]  H. Jiang, C. Ouyang, Z. Wang, Y. Liu, A. Nallanathan, Z. Ding,
+Pinching-Antenna Assisted Sensing: A Bayesian Cramér-Rao Bound Perspective,
+arXiv:2510.09137
+
+    <br>    [103]  Y. Sun, Z. Ding, G. K. Karagiannidis,
+A Stochastic Geometric Analysis on Multi-cell Pinching-antenna Systems under Blockage Effect,
+arXiv:2510.06972
+
+    <br>    [102]  H. Li,
+Pinching Antenna Systems (PASS) for Cell-Free Communications,
+arXiv:2510.03628
+ 
+    <br>    [101]  S. Lv, M. Li, Qi Li, Y. Liu,
+Pinching-Antenna Systems (PASS)-Enabled UAV Delivery,
+arXiv:2509.25698
+ 
+    <br>    [100]  H. Li, R. Zhong, J. Lei, P. Zhiwen, Y. Liu,
+CRB minimization for PASS Assisted ISAC,
+arXiv:2509.22181
+ 
+    <br>    [99]  P. Liu, Z. Fei, M. Hua, G. Chen, X. Wang, R. Liu,
+Wireless Powered MEC Systems via Discrete Pinching Antennas: TDMA versus NOMA,
+arXiv:2509.20908
+
+    <br>    [98]  N. Li, W. Mei, L. Zhu, P. Wu, B. Ning,
+On the Secrecy Performance of Pinching-Antenna Systems,
+arXiv:2509.16854
+
+    <br>    [97]  S. Shan, C. Ouyang, Y. Li, Y. Liu, 
+Secure Multicast Communications with Pinching-Antenna Systems (PASS),
+arXiv:2509.16045 
+
+    <br>    [96]  C. Ouyang, H. Jiang, Z. Wang, Y. Liu, Z. Ding,
+Uplink and Downlink Communications in Segmented Waveguide-Enabled Pinching-Antenna Systems (SWANs),
+arXiv:2509.10666
+
+    <br>    [95]  A. A. Tegos, Y. Xiao, S. A. Tegos, G. K. Karagiannidis, P. D. Diamantoulakis,
+Uplink RSMA for Pinching-Antenna Systems,
+arXiv:2509.10076
+
+    <br>    [94]  H. Jiang, Z. Wang, Y. Liu, A. Nallanathan, Z. Ding,
+Pinching Antenna System (PASS) Enhanced Covert Communications: Against Warden via Sensing,
+arXiv:2509.06170
+
+    <br>    [93]  Z. Wang, J. Xu, C. Ouyang, X. Mu, Y. Liu,
+Multiport Network Modeling and Optimization for Reconfigurable Pinching-Antenna Systems,
+arXiv:2509.05612
+
+    <br>    [92]  H. Zhang, B. Zhang, Y. Zhao, K. Yang, G. Zhang
+Performance Analysis of Pinching-Antenna-Enabled Internet of Things Systems,
+arXiv:2509.04885
+
+    <br>    [91]  B. Zhang, H. Zhang, K. Yang, Y. Zhao, K. Wang,
+On the Performance Analysis of Pinching-Antenna-Enabled SWIPT Systems,
+arXiv:2509.03836
+
+    <br>    [90]  R. Jiang, R. Zhang, Y. Xu, H. Hu, Y. Lu, D. Niyato,
+Spatially Adaptive SWIPT with Pinching Antenna under Probabilistic LoS Blockage,
+arXiv:2509.03038
+ 
+    <br>    [89]  J. Xiao,
+Practical Channel Estimation for Pinching-Antenna Systems: Serial vs. Parallel and Downlink vs. Uplink?, arXiv:2509.02403
+ 
+    <br>    [88]  E. Zhou, Y. Xiao, Z. Liu, S. A. Tegos, P. D. Diamantoulakis, G. K. Karagiannidis, 
+Beamforming Design for Pinching Antenna Systems with Multiple Receive Antennas, arXiv:2509.02166
+ 
+    <br>    [87]  T. Lin, J. Zhu, W. Huang, M. Hua, Z. Zhang, 
+Rate Optimization for Downlink URLLC via Pinching Antenna Arrays, arXiv:2509.01222
+ 
+    <br>    [86]  H. Li, R. Zhong, J. Lei, Y. Liu, 
+Pinching Antenna System for Integrated Sensing and Communications, arXiv:2508.19540
+ 
+   <br>    [85]  B. Wu, F. Fang, M. Zeng, X. Wang,
+Straggler-Resilient Federated Learning over A Hybrid Conventional and Pinching Antenna Network, arXiv:2508.15821
+
+   <br>    [84]  J. Zhao, H. Song, X. Mu, K. Cai, Y. Zhu, Y. Liu,
+Pinching-Antenna Systems-Enabled Multi-User Communications: Transmission Structures and Beamforming Optimization, arXiv:2508.14458
+
+   <br>    [83]  Y. Zhang, X. Sun, J. Wang, T. Hou, A. Li, Y. Liu, A. Nallanathan,
+Pinching-Antenna Systems (PASS)-based Indoor Positioning, arXiv:2508.08185
+
+   <br>    [82]  Y. Liu, H. Jiang, X. Xu, Z. Wang, J. Guo, C. Ouyang, X. Mu, Z. Ding, A. Nallanathan, G. K. Karagiannidis, R. Schober,
+Pinching-Antenna Systems (PASS): A Tutorial, arXiv:2508.07572
+
+   <br>    [81]  Y. Xu, Z. Ding, O. A. Dobre, T. H. Chang,
+Pinching-Antenna System Design with LoS Blockage: Does In-Waveguide Attenuation Matter?, arXiv:2508.07131
+
+   <br>    [80]  Z. Wang, G. Zhang, H. Xu, W. Liu, M. Zeng, F. Fang, D. Niyato,
+Joint Transmit and Pinching Beamforming Design for Pinching Antenna-assisted Symbiotic Radio, arXiv:2508.07002 
+ 
+   <br>    [79]  G. Chen, Q. Wu, K. Zhi, X. Mu, Y. Liu,
+Sum Capacity Characterization of Pinching Antennas-assisted Multiple Access Channels, arXiv:2508.05309
+
+   <br>    [78]   M. Qian, X. Mu, L. You, M. Matthaiou, 
+Pinching-Antenna-based Communications: Spectral Efficiency Analysis and Deployment Strategies, arXiv:2507.14831
+ 
+    
+   <br>    [77]  Z. Ding, H. V. Poor, Analytical Optimization for Antenna Placement in Pinching-Antenna Systems, arXiv:2507.13307 
+
+
+     <br>  [76]  E. Illi, M. Qaraqe, A. Ghrayeb, Secure Pinching Antenna-aided ISAC, arXiv:2507.13131 
+
+     <br>  [75]  M. Zeng, X. Wang, Y. Liu, Z. Ding, G. K. Karagiannidis, H. V. Poor, Robust Resource Allocation for Pinching-Antenna Systems under Imperfect CSI, arXiv:2507.12582
+
+     <br>  [74]  K. Wang, C. Ouyang, Y. Liu, Z. Ding, Pinching-Antenna Systems with LoS Blockages, arXiv:2507.10173
+
+     <br>  [73]  K. Wang, Z. Ding, . Al-Dhahir, Pinching-Antenna Systems for Physical Layer Security, arXiv:2507.10167
+      
+     <br>  [72]  O. G. Karagiannidis, V. E. Galanopoulou, P. D. Diamantoulakis, Z. Ding, O. Dobre,  Deep Learning Optimization of Two-State Pinching Antennas Systems, arXiv:2507.06222
+     
+     <br>  [71]  R. Zhao, S. Hu, D. Mishra, D. W. K. Ng,  Resource Allocation for Multi-waveguide Pinching Antenna-assisted Broadcast Networks, arXiv:2507.03915
+
+     <br>  [70]  S. Yang, Y. Li, Y. Xiao, Y. L. Guan, X. Lei, Z. Ding,  Pinching-Antenna-Assisted Index Modulation: Channel Modeling, Transceiver Design, and Performance Analysis, arXiv:2507.02641
+
+     <br>  [69]  Y. Xu, D. Xu, X. Yu, S. Song, Z. Ding, R. Schober,  Joint Radiation Power, Antenna Position, and Beamforming Optimization for Pinching-Antenna Systems with Motion Power Consumption, arXiv:2507.02348
+
+     <br>  [68]  Y. Xu, Z. Ding, R. Schober, T. Chang,  Pinching-Antenna Systems with In-Waveguide Attenuation: Performance Analysis and Algorithm Design, arXiv:2506.23966
+     
+     <br>  [67]  E. Zhou, J. Cui, Z. Liu, Z. Ding, P. Fan,  Joint Transmission for Cellular Networks with Pinching Antennas: System Design and Analysis, arXiv:2506.17559
+
+     <br>  [66]  S. Shan, C. Ouyang, Y. Li, Y. Liu,  Multigroup Multicast Design for Pinching-Antenna Systems: Waveguide-Division or Waveguide-Multiplexing?, arXiv:2506.16184
+     
+     <br>  [65]  C. Ouyang, Z. Wang, Y. Liu, Z. Ding,      Capacity Characterization of Pinching-Antenna Systems, arXiv:2506.14298
+      
+     <br>  [64]  Q. Ren, X. Mu, S. Lin, Y. Liu,     Pinching-Antenna Systems (PASS) Meet Multiple Access: NOMA or OMA?, arXiv:2506.13490
+
+     <br>  [63]  Kang Zhou, Weixi Zhou, Donghong Cai, Xianfu Lei, Yanqing Xu, Zhiguo Ding, Pingzhi Fan,      A Gradient Meta-Learning Joint Optimization for Beamforming and Antenna Position in Pinching-Antenna Systems, arXiv:2506.12583
+      
+     <br>  [62]  P. Wang, H. Wang, R. Song,  Sum Rate Maximization for Pinching Antennas Assisted RSMA System With Multiple Waveguides,  arXiv:2506.10596
+     
+     <br>  [61]  Y. Wang, Y. Liu, Y. Fu, Z. Ding,  Pinching-Antenna Systems For Indoor Immersive Communications: A 3D-Modeling Based Performance Analysis,  arXiv:2506.07771
+ 
+     <br>  [60]  P. Liu, M. Hua, G. Chen, X. Wang, Z. Fei,  Computation Capacity Maximization for Pinching Antennas-Assisted Wireless Powered MEC Systems,  arXiv:2506.07598
+      
+     <br>  [59]  H. Li, Z. Lyu, Y. Gao, M. Xiao, H. V. Poor,  MIMO Pinching-Antenna-Aided SWIPT,  arXiv:2506.06754
+ 
+    <br>  [58]  M. Zeng, J. Wang, O. A. Dobre, Z. Ding, G. K. Karagiannidis, R. Schober, H. V. Poor, Resource Allocation for Pinching-Antenna Systems: State-of-the-Art, Key Techniques and Open Issues,  arXiv:2506.06156
+
+    <br>  [57]  M. Samy, H. Al-Hraishawi, M. Alsenwi, A. B. M. Adam, S. Chatzinotas, B. Otteresten, Pinching Antenna Systems versus Reconfigurable Intelligent Surfaces in mmWave,  arXiv:2506.05102 
+    
+    <br>  [56]  M. Sun, C. Ouyang, S. Wu, and Y. Liu, Multiuser Beamformig for Pinching-Antenna Systems: An Element-wise Optimization Framework,  arXiv:2506.03770 
+  
+  <br> [55] D. Gan, X. Xu, J. Zuo, X. Ge, and Y. Liu, Joint Beamforming for NOMA Assisted Pinching Antenna Systems (PASS), arXiv:2506.03063
+ 
+  <br> [54] Y. Cheng, C. Ouyang, Y. Liu, and G. K. Karagiannidis, On the Performance of Pinching-Antenna Systems (PASS) with Orthogonal and Non-Orthogonal Multiple Access, arXiv:2506.02420
+  
+ <br> [53] S. Shan, C. Ouyang, Y. Li, and Y. Liu, Exploiting Pinching-Antenna Systems in Multicast Communications, arXiv:2506.00616
+
+ <br> [52] Y. Li, J. Wang, M. Zeng, and Y. Liu, Sum Rate Maximization for Wireless Powered Pinching-Antenna Systems (PASS), arXiv:2506.00355
+
+ <br> [51]  W. Mao, Y. Lu, Y. Xu, B. Ai, O. A. Dobre, D. Niyato, Multi-Waveguide Pinching Antennas for ISAC, arXiv:2505.24307  
+
+ <br> [50]  J. Xiao, J. Wang, M. Zeng, Y. Liu, and G. K. Karagiannidis, OFDM-PASS: Frequency-Selective Modeling and Analysis for Pinching-Antenna Systems, arXiv:2505.20636 
+ 
+ <br> [49] T. K. Oikonomou, S. A. Tegos, P. D. Diamantoulakis, Y. Liu, and G. K. Karagiannidis, OFDMA for Pinching Antenna Systems, arXiv:2505.19902 
+
+ <br> [48] Z. Wang, C. Ouyang, Y. Liu, and A. Nallanathan, Wireless Sensing via Pinching-Antenna Systems, arXiv:2505.15430
+ 
+ <br> [47] M. Zeng, J. Wang, G. Zhou, F. Fang and X. Wang, Energy-Efficient Design for Downlink Pinching-Antenna Systems with QoS Guarantee, arXiv:2505.14904 
+
+ <br> [46] V. K. Papanikolaou, G. Zhou, B. Kaziu, A. Khalili, P. D. Diamantoulakis, G. K. Karagiannidis, and R. Schober, Resolving the Double Near-Far Problem via Wireless Powered Pinching-Antenna Networks, arXiv:2505.12403
+ 
+ <br> [45] C. Ouyang, Z. Wang, Y. Liu, and Z. Ding, Rate Region of ISAC for Pinching-Antenna Systems, arXiv:2505.10179
+
+ <br> [44] Z. Lyu, H. Li, Y. Gao, M. Xiao, and H. V. Poor, Pinching-Antenna Systems (PASS) Aided Over-the-air Computation, arXiv:2505.07559
+  
+ <br> [43] M. Zeng, X. Li, Ji Wang, G. Huang, O. A. Dobre and Z. Ding, Energy-Efficient Resource Allocation for NOMA-Assisted Uplink Pinching-Antenna Systems, arXiv:2505.07555
+ 
+    <br> [42] Y. Li, J. Wang, Y. Liu and Z. Ding, Pinching-Antenna Assisted Simultaneous Wireless Information and Power Transfer, arXiv:2505.06240
+
+     <br> [41] K. Wang, Z. Ding, and G. K. Karagiannidis,  Antenna Activation and Resource Allocation in Multi-Waveguide Pinching-Antenna Systems, arXiv:2505.02864 
+      
+      <br> [40] A. Khalili, B. Kaziu, V. K. Papanikolaou, R. Schober, Pinching Antenna-enabled ISAC Systems: Exploiting Look-Angle Dependence of RCS for Target Diversity, submitted, arXiv:2505.01777 
+ 
+    <br>[39] D. Bozanis, V. K. Papanikolaou, S. A. Tegos, and G. K. Karagiannidis, Cramér-Rao Bounds for Integrated Sensing and Communications in Pinching-Antenna Systems, submitted, arXiv:2505.01333
+    
+    <br>[38] M. Zeng, J. Wang, X. Li, G. Wang, O. A. Dobre, and Z. Ding, Sum Rate Maximization for NOMA-Assisted Uplink Pinching-Antenna Systems, submitted, arXiv:2505.00549
+
+    <br>[37] X. Xu, X. Mu, Z. Wang, Y. Liu, and A. Nallanathan , Pinching-Antenna Systems (PASS): Power Radiation Model and Optimal Beamforming Design, submitted, arXiv:2505.00218
+
+    <br>[36] J. Zhang, H. Xu, C. Ouyang, Q. Zou, H. Yang, Uplink Sum Rate Maximization for Pinching Antenna-Assisted Multiuser MISO, submitted, arXiv:2504.16577 
+    
+     <br>[35] L. Zhang, X. Mu, A. Liu, Y. Liu, Two-Timescale Joint Transmit and Pinching Beamforming for Pinching-Antenna Systems, submitted, arXiv:2504.16099
+     
+    <br>[34] Z. Zhou, Z. Yang, G. Chen, Z. Ding, Sum-Rate Maximization for NOMA-Assisted Pinching-Antenna Systems, submitted, arXiv:2504.15006
+    
+    <br>[33] Y. Xu, Z. Ding, D. Cai, V. W. S. Wong, QoS-Aware NOMA Design for Downlink Pinching-Antenna Systems, submitted, arXiv:2504.13723 
+
+    <br>[32] P. P. Papanikolaou, D. Bozanis, S. A. Tegos, P. D. Diamantoulakis, G. K. Karagiannidis, Secrecy Rate Maximization with Artificial Noise for Pinching-Antenna Systems, submitted, arXiv:2504.10656
+
+ 
+ 
+<br> [31] H. Jiang, Z. Wang, Y. Liu, Pinching-Antenna System (PASS) Enhanced Covert Communications, submitted, arXiv:2504.10442
+
+<br> [30] G. Zhou, V. Papanikolaou, Z. Ding, R. Schober, Channel Estimation for mmWave Pinching-Antenna Systems, arXiv:2504.09317
+
+<br> [29] Z. Zhang, Y. Liu, B. He, J. Chen, Integrated Sensing and Communications for Pinching-Antenna Systems (PASS), arXiv:2504.07709
+
+
+<br> [28] Z. Ding, Pinching-Antenna Assisted ISAC: A CRLB Perspective,  IEEE Wireless Lett., submitted, arXiv:2504.05792
+
+
+<br> [27] Y. Fu, F. He, Z. Shi, H. Zhang, Power Minimization for NOMA-assisted Pinching Antenna Systems With Multiple Waveguides, arXiv:2503.20336
+
+
+<br> [26] O. S. Badarneh, H. S. Silva, Y. H. Al Badarneh, Physical-Layer Security of Pinching-Antenna Systems, submitted, arXiv:2503.18322, 
+
+
+<br> [25] J. Xiao, J. Wang, Y. Liu, Channel Estimation for Pinching-Antenna Systems (PASS), submitted, arXiv:2503.13268
+
+
+<br> [24] Y. Qin, Y. Fu, H. Zhang, Joint Antenna Position and Transmit Power Optimization for Pinching Antenna-Assisted ISAC Systems, submitted, arXiv:2503.12872 
+
+
+<br> [23] S. Hu, R. Zhao, Y. Liao, D. W. K. Ng, J. Yuan, Sum-Rate Maximization for Pinching Antenna-assisted NOMA Systems with Multiple Dielectric Waveguides, submitted, arXiv:2503.10060
+
+
+<br> [22] M. Sun, C. Ouyang, S. Wu, Y. Liu, Physical Layer Security for Pinching-Antenna Systems (PASS), submitted, arXiv:2503.09075
+
+
+<br> [21] Z. Ding, H. V. Poor, LoS Blockage in Pinching-Antenna Systems: Curse or Blessing?, IEEE Wireless Commun. Lett., submitted, arXiv:2503.08554
+
+
+<br> [20] A. Bereyhi, C. Ouyang, S. Asaad, Z. Ding, H. V. Poor, MIMO-PASS: Uplink and Downlink Transmission via MIMO Pinching-Antenna Systems, submitted, arXiv:2503.03117
+
+<br> [19] J. Zhao, X. Mu, K. Cai, Y. Zhu, Y, Liu, Waveguide Division Multiple Access for Pinching-Antenna Systems (PASS), arXiv:2502.17781
+
+
+<br> [18] X. Mu, G. Zhu, Y. Liu, Pinching-Antenna System (PASS)-enabled Multicast Communications, submitted, arXiv:2502.16624 
+
+
+<br> [17] Ximing Xie, Fang Fang, Zhiguo Ding, Xianbin Wang, A Low-Complexity Placement Design of Pinching-Antenna Systems, submitted, arXiv:2502.14250
+
+<br> [16] T. Hou, Y. Liu, A. Nallanathan, On the Performance of Uplink Pinching Antenna Systems (PASS), submitted, arXiv:2502.12365 
+
+<br> [15] X. Xu, X. Mu, Y. Liu, A. Nallanathan, Joint Transmit and Pinching Beamforming for Pinching Antenna Systems (PASS): Optimization-Based or Learning-Based?, submitted, arXiv:2502.08637
+
+<br> [14] D. Tyrovolas, S. A. Tegos, P. D. Diamantoulakis, S. Ioannidis, C. K. Liaskos, G. K. Karagiannidis, submitted, Performance Analysis of Pinching-Antenna Systems, arXiv:2502.06701
+
+<br> [13] S. Lv, Y. Liu, Z. Ding, Beam Training for Pinching-Antenna Systems (PASS), submitted, arXiv:2502.05921 
+
+<br> [12] Z. Wang, C. Ouyang, X. Mu, Y. Liu, Z. Ding, Modeling and Beamforming Optimization for Pinching-Antenna Systems, submitted, arXiv:2502.05917
+ 
+
+<br> [11] X. Xie, Y. Lu, Z. Ding, Graph Neural Network Enabled Pinching Antennas, submitted, arXiv:2502.05447
+
+
+<br> [10] A. Bereyhi, S. Asaad, C. Ouyang, Z. Ding, H. Vincent Poor, Downlink Beamforming with Pinching-Antenna Assisted MIMO Systems, submitted, arXiv:2502.01590 
+
+ 
+<br> [9] Jia Guo, Yuanwei Liu, Arumugam Nallanathan,  GPASS: Deep Learning for Beamforming in Pinching-Antenna Systems (PASS), submitted, arXiv:2502.01438
+ 
+<br> [8] Y. Liu, Z. Wang, X. Mu, C. Ouyang, X. Xu, Z. Ding, Pinching-Antenna Systems (PASS): Architecture Designs, Opportunities, and Outlook, submitted, arXiv:2501.18409
+
+
+ 
+<br> [7] Z. Yang, N. Wang, Y. Sun, Z. Ding, R. Schober, G. K. Karagiannidis, V. W. S. Wong, O. A. Dobre, Pinching Antennas: Principles, Applications and Challenges, submitted, arXiv:2501.10753 
+
+ 
+
+ 
+<br>[6]  C. Ouyang, Z. Wang, Yuanwei Liu, Zhiguo Ding, Array Gain for Pinching-Antenna Systems (PASS), submitted, arXiv:2501.05657
+
+ 
+<br>[5] K. Wang, Z. Ding, R. Schober Antenna Activation for NOMA Assisted Pinching-Antenna Systems, IEEE Wireless Commun. Lett., to appear in 2025.
+
+ 
+
+ 
+<br>[4] S. A. Tegos, P. D. Diamantoulakis, Z. Ding, G. K. Karagiannidis, Minimum Data Rate Maximization for Uplink Pinching-Antenna Systems,  IEEE Wireless Commun. Lett., to appear in 2025.
+ 
+ 
+ <br> [3] Y. Xu, Z. Ding, G. K. Karagiannidis, Rate Maximization for Downlink Pinching-Antenna Systems, IEEE Commun. Lett., to appear in 2025.
+
+
+ 
+  <br> [2] Z. Ding, R. Schober, H. Vincent Poor, Flexible-Antenna Systems: A Pinching-Antenna Perspective, IEEE Trans. Commun., to appear in 2025. 
+  
+  <br> [1] A. Fukuda, H. Yamamoto, H. Okazaki, Y. Suzuki, and K. Kawai, Pinching antenna - using a dielectric waveguide as an antenna, NTT DOCOMO Technical J., vol. 23, no. 3, pp. 5-12, Jan. 2022.
+ </p>
+ 
+ </p>Given the rapid progress in pinching antenna research, we may not be aware of some recent developments. If you have updates to share, please feel free to email us at zhiguo.ding@manchester.ac.uk.
+  </p>
+To be continued. 
+  </div>
+
+
+  <div class="bottomText">
+      <p>@2023 Frank Ding. This work is licensed under CC BY NC ND 4.0.</p>
+  </div>
+
+</body>
+</html>

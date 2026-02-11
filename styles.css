@@ -1,0 +1,97 @@
+body {
+    margin: 0; 
+    background-color: #bbb;
+    color: #444;
+}
+
+/* bio | students | research | papers*/
+
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 18.75px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a.inactive:hover {
+    background: #aaa;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #666;
+    color: white;
+}
+
+.navbar a.inactive {
+    background-color: #333;
+    color: white;
+}
+
+.navbar a.title {
+    background: #ddd;
+    color: black;
+    font-size: 25px;
+    text-align: centre;
+    padding: 14px 30px;
+}
+
+.navbar a.link {
+    padding: 7px;
+    float: right
+}
+
+.main {
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    width:100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.left {
+    float: left;
+    margin: 0;
+}
+
+.right {
+    float: right;
+    margin: 0;
+}
+
+
+.details {
+    padding-top: 5.5%;
+    padding-bottom: 0;
+    padding-left: 3%;
+    padding-right: 2%;
+    margin-bottom: 0;
+}
+
+a {
+    color: #000
+}
+
+.bottomText {
+    background-color: #666;
+    color:#fff;
+    width:100%;
+    padding-left:15px;
+    padding-right:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
